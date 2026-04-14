@@ -1,17 +1,18 @@
 ---
-title: "Title Goes Here"
-subtitle: "Your Subtitle Here"
+title: "Examining Community Food Environments and Health Outcomes in Virginia"
 author: 
-  - name: FirstName LastName
+  - name: Emmanuel Christian
     affil: 1
-  - name: CoAuthorFirst CoAuthorLast
-    affil: 2
+  - name: Nathan Alexander, PhD
+    affil: 2, 3
 
 affiliation:
   - num: 1
-    address: "Department, College or University Name"
+    address: "Health, Human Performance, and Leisure Studies"
   - num: 2
-    address: "Department, College or University Name"
+    address: "Department of Curriculum and Instruction"
+  - num: 3
+    address: "Center for Applied Data Science and Analytics"
 
 column_numbers: 3
 
@@ -66,7 +67,7 @@ library(tidyverse)
 library(ggplot2)
 library(scales)
 library(here)
-here::i_am("howard-template.Rmd") # if you change the name of your file, update this
+here::i_am("christian-alexander.Rmd") # if you change the name of your file, update this
 ```
 
 <style>
