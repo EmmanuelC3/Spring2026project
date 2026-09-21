@@ -1,5 +1,5 @@
 ---
-title: "Food Swamps, Food Deserts, and Food Oases: Integrating Spatial Analysis and Census Data to Examine Community Food Environments and Socioeconomic Indicators in Henrico County and Virginia Beach City, VA"
+title: "Food Swamps, Food Deserts, and Food Oases: Integrating Spatial Analysis and Census Data to Examine Community Food Environments and Socioeconomic Indicators in Henrico County and Virginia Beach City County"
 author: 
   - name: Emmanuel Christian
     affil: 1, 4
@@ -105,7 +105,7 @@ pagedown::chrome_print(
 
 # Overview
 
-This study examines how living in a food swamp, food desert, or food oasis shapes community health outcomes, with a focus on Virginia Beach City and Henrico County, Virginia. Using spatial analysis and Census data, we investigate how food environments relate to socioeconomic conditions and public health disparities.
+This study examines how living in a food swamp, food desert, or food oasis shapes community health outcomes, with a focus on Virginia Beach City County and Henrico County. Using spatial analysis and Census data, we investigate how food environments relate to socioeconomic conditions and public health disparities.
 
 # Literature Review
 
@@ -121,11 +121,11 @@ Prior research shows that limited access to supermarkets increases reliance on e
 
 # Research Questions
 
-How are tract-level food environments associated with socioeconomic conditions in VA Beach City and Henrico County?
+How are tract-level food environments associated with socioeconomic conditions in VA Beach City and Henrico Counties?
 
 # Methods and Data
 
-Data were drawn from the Department of Agriculture Economic Research through the Food Access Research Atlas. The Atlas defines low-access tracts based on distance to the nearest supermarket, while also incorporating income to identify vulnerable populations and construct classifications. We integrate U.S public health data and the `tidycensus()` package in R to conduct an initial case study of food environments in Henrico County, VA and Virginia Beach City, VA.
+Data were drawn from the Department of Agriculture Economic Research through the Food Access Research Atlas. The Atlas defines low-access tracts based on distance to the nearest supermarket, while also incorporating income to identify vulnerable populations and construct classifications. We integrate U.S public health data and the `tidycensus()` package in R to conduct an initial case study of food environments in Henrico and Virginia Beach City Counties.
 
 ```{r, include=F, warning=F, message=F}
 # Load food access data
@@ -233,7 +233,7 @@ map_va_beach <- ggplot(filter(va_map, County == "Virginia Beach city")) +
     na.value = "grey85",
     name = "Type"
   ) +
-  labs(title = "Virginia Beach City") +
+  labs(title = "Virginia Beach City County") +
   theme_minimal() +
   theme(legend.position = "bottom")
 
